@@ -24,7 +24,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run:
+      - run: echo ${MY_NAME}
           command: |
             echo $MY_NAME
 workflows:
