@@ -25,6 +25,8 @@ jobs:
     steps:
       - checkout
       - run: echo ${MY_NAME}
+          command: |
+            echo $MY_NAME
 workflows:
   version: 2
   build-hello-and-world:
