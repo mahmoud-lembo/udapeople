@@ -61,6 +61,10 @@ workflows:
             - print_hello
       - print_name
       - print_name2
+      - save_hello_world_output
+      - print_output_file:
+            requires:
+            - save_hello_world_output
   # Name the workflow "welcome"
   welcome:
     # Run the welcome/run job in its own container
